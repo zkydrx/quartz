@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tyd.guihuabu</groupId>
+  <artifactId>quartz</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>quartz Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <!--&lt;!&ndash; 添加quartz的jar包 &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.quartz-scheduler</groupId>-->
+    <!--<artifactId>quartz</artifactId>-->
+    <!--<version>2.2.1</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>org.quartz-scheduler</groupId>-->
+    <!--<artifactId>quartz-jobs</artifactId>-->
+    <!--<version>2.2.1</version>-->
+    <!--</dependency>-->
+
+
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.slf4j/slf4j-api &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>org.slf4j</groupId>-->
+    <!--<artifactId>slf4j-api</artifactId>-->
+    <!--<version>1.7.10</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+    <!--<groupId>org.slf4j</groupId>-->
+    <!--<artifactId>slf4j-nop</artifactId>-->
+    <!--<version>1.7.10</version>-->
+    <!--</dependency>-->
+
+
+
+    <!--<dependency>-->
+    <!--<groupId> org.apache.cassandra</groupId>-->
+    <!--<artifactId>cassandra-all</artifactId>-->
+    <!--<version>0.8.1</version>-->
+
+    <!--<exclusions>-->
+    <!--<exclusion>-->
+    <!--<groupId>org.slf4j</groupId>-->
+    <!--<artifactId>slf4j-log4j12</artifactId>-->
+    <!--</exclusion>-->
+    <!--<exclusion>-->
+    <!--<groupId>log4j</groupId>-->
+    <!--<artifactId>log4j</artifactId>-->
+    <!--</exclusion>-->
+    <!--</exclusions>-->
+
+    <!--</dependency>-->
+
+    <!-- 测试jar -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- quartz -->
+    <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
+    <dependency>
+      <groupId>org.quartz-scheduler</groupId>
+      <artifactId>quartz</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz-jobs -->
+    <dependency>
+      <groupId>org.quartz-scheduler</groupId>
+      <artifactId>quartz-jobs</artifactId>
+      <version>2.3.0</version>
+    </dependency>
+
+
+
+    <!-- 日志相关jar包 -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>1.7.5</version>
+    </dependency>
+    <!--<dependency>&lt;!&ndash;   Failed to load class "org.slf4j.impl.StaticLoggerBinder". &ndash;&gt;-->
+      <!--<groupId>ch.qos.logback</groupId>-->
+      <!--<artifactId>logback-classic</artifactId>-->
+      <!--<version>1.0.13</version>-->
+    <!--</dependency>-->
+
+
+
+
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/ch.qos.logback/logback-classic &ndash;&gt;-->
+    <!--<dependency>-->
+      <!--<groupId>ch.qos.logback</groupId>-->
+      <!--<artifactId>logback-classic</artifactId>-->
+      <!--<version>1.0.3</version>-->
+      <!--<scope>test</scope>-->
+    <!--</dependency>-->
+
+
+
+    <!-- MySql的包 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.31</version>
+    </dependency>
+
+    <!-- json 相关jar包 -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.1.36</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-resources-plugin</artifactId>
+      <version>2.6</version>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <finalName>quartz</finalName>
+  </build>
+</project>
