@@ -27,7 +27,7 @@ public class RAMQuartz
                 .withIdentity("ramJob","ramGroup")//job的name和group
                 .build();
         // 任务运行的时间，SimpleSchedle类型触发器有效
-        Long time = System.currentTimeMillis() +3*1000L;//3秒后启动任务。
+        Long time = System.currentTimeMillis() +10*1000L;//3秒后启动任务。
         Date statTime = new Date(time);
 
         //4. 创建Trigger
@@ -37,7 +37,7 @@ public class RAMQuartz
                 .withIdentity("ramTrigger","ramTriggerGroup")
                 //.withSchedule(SimpleScheduleBuilder.simpleSchedule())
                 .startAt(statTime)// 默认当前时间启动。
-                .withSchedule(CronScheduleBuilder.cronSchedule("0/2 * * * * ?"))//两秒执行一次
+                .withSchedule(CronScheduleBuilder.cronSchedule("0/10 * * * * ?"))//两秒执行一次
                 .build();
 
         //5. 注册任务和定时器
@@ -45,6 +45,6 @@ public class RAMQuartz
 
         //6. 启动调度器
         scheduler.start();
-//        logger.info("启动时间："+ new Date());
+        logger.info("启动时间："+ new Date());
     }
 }
